@@ -39,10 +39,10 @@ Combines Projects and Publications. Publications are listed under their correspo
   - In-progress papers: yellow
 - Interactions: drag nodes, hover to preview paper title/year, click to open full entry or paper link
 
-**List View:** Projects listed sequentially. Each project has a title, description, and a nested list of publications (published + in-progress).
+**List View:** Projects listed sequentially, order by project years. Each project has a title, description, and a nested list of publications (published + in-progress).
 
 ### Page 3: Blog
-Chronological list of posts. Standard al-folio blog layout. Used for news, updates, and writing.
+Order by topics first, and then Chronological list of posts. Standard al-folio blog layout. Used for news, updates, and writing.
 
 ---
 
