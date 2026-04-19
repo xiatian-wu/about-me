@@ -2,14 +2,16 @@
 layout: default
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/publication-graph.css' | relative_url }}">
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
   <!-- View toggle -->
-  <div class="d-flex gap-2 mb-4" id="view-toggle">
-    <button class="btn btn-sm btn-primary" id="btn-graph" onclick="showView('graph')">
+  <div class="mb-4" id="view-toggle">
+    <button class="btn btn-sm btn-primary mr-2" id="btn-graph" onclick="showView('graph')">
       Graph View
     </button>
     <button class="btn btn-sm btn-outline-primary" id="btn-list" onclick="showView('list')">
@@ -38,7 +40,7 @@ layout: default
             {{ proj_node.label }}
           {% endif %}
           {% if proj_node.years %}
-            <small class="text-muted ms-2">{{ proj_node.years }}</small>
+            <small class="text-muted ml-2">{{ proj_node.years }}</small>
           {% endif %}
         </h3>
 
@@ -54,15 +56,15 @@ layout: default
           {% for node in site.data.graph.nodes %}
             {% if node.type == "paper" and paper_ids contains node.id %}
             <li class="{% if node.status == 'in-progress' %}text-muted{% endif %} mb-1">
-              {% if node.url != "" %}
+              {% if node.url and node.url != "" %}
                 <a href="{{ node.url }}" target="_blank">{{ node.label }}</a>
               {% else %}
                 {{ node.label }}
               {% endif %}
               ({{ node.year }})
-              {% if node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
+              {% if node.venue and node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
               {% if node.status == "in-progress" %}
-                <span class="badge bg-warning text-dark ms-1">In preparation</span>
+                <span class="badge badge-warning ml-1">In preparation</span>
               {% endif %}
             </li>
             {% endif %}
@@ -88,13 +90,13 @@ layout: default
       <ul>
         {% for node in orphan_papers %}
         <li class="mb-1">
-          {% if node.url != "" %}
+          {% if node.url and node.url != "" %}
             <a href="{{ node.url }}" target="_blank">{{ node.label }}</a>
           {% else %}
             {{ node.label }}
           {% endif %}
           ({{ node.year }})
-          {% if node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
+          {% if node.venue and node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
         </li>
         {% endfor %}
       </ul>
@@ -110,7 +112,6 @@ layout: default
   <!-- D3 and graph script (added in Task 6) -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7" defer></script>
   <script src="{{ '/assets/js/publication-graph.js' | relative_url }}" defer></script>
-  <link rel="stylesheet" href="{{ '/assets/css/publication-graph.css' | relative_url }}">
 
   <script>
   function showView(view) {
