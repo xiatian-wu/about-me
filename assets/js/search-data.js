@@ -23,11 +23,11 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about-me/blog/";
           },
-        },{id: "post-building-my-academic-personal-website-workflow-decisions-and-lessons-learned",
+        },{id: "post-how-i-built-this-website",
         
-          title: "Building My Academic Personal Website: Workflow, Decisions, and Lessons Learned",
+          title: "How I Built This Website",
         
-        description: "A behind-the-scenes walkthrough of how I built this site from scratch with Claude Code — covering key decisions, technical challenges, and what I would do differently next time.",
+        description: "A plain-language walkthrough of building an academic personal website with AI assistance — what we built, what went wrong, and what I learned.",
         section: "Posts",
         handler: () => {
           
@@ -115,30 +115,4 @@ ninja.data = [{
         handler: () => {
           window.open("https://www.linkedin.com/in/xiatianwu", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
