@@ -7,5 +7,3 @@ importance: 4
 category: active
 years: "2024–present"
 ---
-
-Research applying stated preference methods and conjoint analysis to study how consumers value recycled plastic products. Examines how different information treatments affect willingness-to-pay estimates and methodological choices in discrete choice experiment design.
