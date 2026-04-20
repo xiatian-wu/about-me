@@ -2,8 +2,7 @@
 layout: about
 title: about
 permalink: /
-nav: true
-nav_order: 1
+nav: false
 subtitle: >
   Researcher, <a href="https://www.nist.gov" target="_blank">National Institute of Standards and Technology (NIST)</a>
 
