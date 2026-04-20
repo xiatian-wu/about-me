@@ -34,15 +34,14 @@ layout: default
       {% assign proj_page = site.projects | where: "slug", proj_node.id | first %}
       <div class="mb-5" id="{{ proj_node.id }}">
         <h3>
-          {% if proj_page %}
-            <a href="{{ proj_page.url | relative_url }}">{{ proj_node.label }}</a>
-          {% else %}
-            {{ proj_node.label }}
-          {% endif %}
+          {{ proj_node.label }}
           {% if proj_node.years %}
             <small class="text-muted ml-2">{{ proj_node.years }}</small>
           {% endif %}
         </h3>
+        {% if proj_page and proj_page.description %}
+          <p class="text-muted">{{ proj_page.description }}</p>
+        {% endif %}
 
         {% assign paper_ids = "" | split: "" %}
         {% for edge in site.data.graph.edges %}
