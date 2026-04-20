@@ -17,27 +17,27 @@ This site was built over the course of a single focused session using [Claude Co
 
 ```mermaid
 flowchart TD
-    A([Start: I want a personal website]) --> B[Brainstorm design & requirements]
-    B --> C[Choose tech stack\nal-folio + Jekyll + GitHub Pages]
-    C --> D[Fork repo to GitHub\nxiatian-wu/about-me]
-    D --> E[Enable GitHub Actions\non forked repo]
-    E --> F[Configure _config.yml\nbaseurl, url, title]
-    F --> G[Add real content\nCV, bio, photo, socials]
+    A([Start]) --> B[Brainstorm & design]
+    B --> C[Choose stack\nal-folio + GitHub Pages]
+    C --> D[Fork repo]
+    D --> E[Enable GitHub Actions]
+    E --> F[Configure _config.yml]
+    F --> G[Add content\nCV, bio, photo, socials]
     G --> H[Build custom features]
 
-    H --> H1[D3.js research graph\nfrom _data/graph.yml]
-    H --> H2[CV timeline\nfrom _data/cv.yml]
-    H --> H3[Research list view\nwith paper statuses]
+    H --> H1[D3 research graph]
+    H --> H2[CV timeline]
+    H --> H3[Research list view]
 
-    H1 & H2 & H3 --> I[Iterate on design\ncolors, typography, dark mode]
-    I --> J[Debug & fix issues]
+    H1 & H2 & H3 --> I[Iterate on design\ncolors & dark mode]
+    I --> J[Debug issues]
 
-    J --> J1[Bootstrap 4 vs 5 classes]
+    J --> J1[Bootstrap 4 classes]
     J --> J2[Dark mode contrast]
-    J --> J3[.nojekyll on gh-pages]
+    J --> J3[.nojekyll fix]
 
     J1 & J2 & J3 --> K[Polish & ship]
-    K --> L([Live at xiatian-wu.github.io/about-me])
+    K --> L([Live site])
 ```
 
 ---
