@@ -43,6 +43,7 @@ function initGraph(data) {
   if (!container) return;
 
   container.innerHTML = '';
+  d3.selectAll('.graph-tooltip').remove();
 
   var width  = container.clientWidth  || 900;
   var height = container.clientHeight || 600;
