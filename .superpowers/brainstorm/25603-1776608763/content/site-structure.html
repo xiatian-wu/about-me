@@ -1,0 +1,113 @@
+<h2>Proposed Site Structure</h2>
+<p class="subtitle">al-folio layout — click any section to select if it looks right</p>
+
+<div class="mockup">
+  <div class="mockup-header">yourname.com — Navigation</div>
+  <div class="mockup-body">
+    <div class="mock-nav" style="justify-content:center;gap:2rem;display:flex;flex-wrap:wrap;padding:0.75rem 1rem;">
+      <span>About</span>
+      <span>Publications</span>
+      <span>Research</span>
+      <span>CV</span>
+      <span>Blog</span>
+      <span>Contact</span>
+    </div>
+
+    <div style="display:flex;gap:1.5rem;padding:1.5rem;border-top:1px solid #e2e8f0;">
+      <!-- Left sidebar -->
+      <div style="width:200px;flex-shrink:0;">
+        <div class="placeholder" style="height:160px;border-radius:50%;width:160px;margin:0 auto 1rem;">Photo</div>
+        <div class="placeholder" style="height:1rem;margin-bottom:0.5rem;">Your Name</div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.5rem;">Title / Lab</div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.5rem;">NIST</div>
+        <div style="display:flex;gap:0.5rem;margin-top:1rem;justify-content:center;">
+          <div class="placeholder" style="width:28px;height:28px;border-radius:4px;">GS</div>
+          <div class="placeholder" style="width:28px;height:28px;border-radius:4px;">OR</div>
+          <div class="placeholder" style="width:28px;height:28px;border-radius:4px;">LI</div>
+        </div>
+      </div>
+
+      <!-- Main content area -->
+      <div style="flex:1;">
+        <div class="placeholder" style="height:1.25rem;width:60%;margin-bottom:1rem;">About Me</div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.5rem;"></div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.5rem;width:90%;"></div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:1.5rem;width:80%;"></div>
+
+        <div class="placeholder" style="height:1.1rem;width:50%;margin-bottom:0.75rem;">Research Interests</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+          <div class="placeholder" style="height:1.5rem;width:100px;border-radius:999px;"></div>
+          <div class="placeholder" style="height:1.5rem;width:120px;border-radius:999px;"></div>
+          <div class="placeholder" style="height:1.5rem;width:90px;border-radius:999px;"></div>
+        </div>
+
+        <div class="placeholder" style="height:1.1rem;width:50%;margin-bottom:0.75rem;">Recent Publications</div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.35rem;"></div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.35rem;width:85%;"></div>
+        <div class="placeholder" style="height:0.75rem;margin-bottom:0.35rem;width:70%;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:1.5rem;">
+  <h3>Page breakdown</h3>
+  <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+    <thead>
+      <tr style="border-bottom:2px solid #e2e8f0;">
+        <th style="text-align:left;padding:0.5rem;">Page</th>
+        <th style="text-align:left;padding:0.5rem;">Content</th>
+        <th style="text-align:left;padding:0.5rem;">Source</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #f1f5f9;">
+        <td style="padding:0.5rem;font-weight:600;">About</td>
+        <td style="padding:0.5rem;">Bio, photo, research interests, news</td>
+        <td style="padding:0.5rem;">You write in Markdown</td>
+      </tr>
+      <tr style="border-bottom:1px solid #f1f5f9;">
+        <td style="padding:0.5rem;font-weight:600;">Publications</td>
+        <td style="padding:0.5rem;">Published + in-progress papers</td>
+        <td style="padding:0.5rem;">BibTeX (Google Scholar export) + manual entries</td>
+      </tr>
+      <tr style="border-bottom:1px solid #f1f5f9;">
+        <td style="padding:0.5rem;font-weight:600;">Research</td>
+        <td style="padding:0.5rem;">Projects, descriptions, images</td>
+        <td style="padding:0.5rem;">Markdown files per project</td>
+      </tr>
+      <tr style="border-bottom:1px solid #f1f5f9;">
+        <td style="padding:0.5rem;font-weight:600;">CV</td>
+        <td style="padding:0.5rem;">Full CV, downloadable PDF</td>
+        <td style="padding:0.5rem;">YAML data file or uploaded PDF</td>
+      </tr>
+      <tr style="border-bottom:1px solid #f1f5f9;">
+        <td style="padding:0.5rem;font-weight:600;">Blog</td>
+        <td style="padding:0.5rem;">Posts, news, updates</td>
+        <td style="padding:0.5rem;">Markdown files</td>
+      </tr>
+      <tr>
+        <td style="padding:0.5rem;font-weight:600;">Contact</td>
+        <td style="padding:0.5rem;">Email, office, social links</td>
+        <td style="padding:0.5rem;">Config file</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="options" style="margin-top:1.5rem;">
+  <div class="option" data-choice="looks-good" onclick="toggleSelect(this)">
+    <div class="letter">✓</div>
+    <div class="content">
+      <h3>Looks good</h3>
+      <p>This structure works for me</p>
+    </div>
+  </div>
+  <div class="option" data-choice="changes" onclick="toggleSelect(this)">
+    <div class="letter">✎</div>
+    <div class="content">
+      <h3>I want changes</h3>
+      <p>Tell me what to adjust</p>
+    </div>
+  </div>
+</div>

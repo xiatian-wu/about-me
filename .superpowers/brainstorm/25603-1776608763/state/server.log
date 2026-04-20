@@ -1,0 +1,16 @@
+{"type":"server-started","port":56955,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:56955","screen_dir":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/content","state_dir":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/state"}
+{"type":"screen-added","file":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/content/site-structure.html"}
+{"source":"user-event","type":"click","text":"✎\n    \n      I want changes\n      Tell me what to adjust","choice":"changes","id":null,"timestamp":1776609339853}
+{"source":"user-event","type":"click","text":"✎\n    \n      I want changes\n      Tell me what to adjust","choice":"changes","id":null,"timestamp":1776609361060}
+{"source":"user-event","type":"click","text":"✎\n    \n      I want changes\n      Tell me what to adjust","choice":"changes","id":null,"timestamp":1776609361602}
+{"source":"user-event","type":"click","text":"✎\n    \n      I want changes\n      Tell me what to adjust","choice":"changes","id":null,"timestamp":1776609361727}
+{"source":"user-event","type":"click","text":"✎\n    \n      I want changes\n      Tell me what to adjust","choice":"changes","id":null,"timestamp":1776609362535}
+{"type":"screen-added","file":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/content/site-structure-v2.html"}
+{"type":"screen-added","file":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/content/graph-view.html"}
+{"source":"user-event","type":"click","text":"✎\n    \n      Adjust something\n      Tell me what to change","choice":"adjust","id":null,"timestamp":1776609957774}
+{"source":"user-event","type":"click","text":"✎\n    \n      Adjust something\n      Tell me what to change","choice":"adjust","id":null,"timestamp":1776609960706}
+{"source":"user-event","type":"click","text":"✎\n    \n      Adjust something\n      Tell me what to change","choice":"adjust","id":null,"timestamp":1776609961173}
+{"source":"user-event","type":"click","text":"✎\n    \n      Adjust something\n      Tell me what to change","choice":"adjust","id":null,"timestamp":1776609961615}
+{"type":"screen-added","file":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/content/graph-view-v2.html"}
+{"type":"screen-added","file":"/Users/xnw17/Documents/personal-website/.superpowers/brainstorm/25603-1776608763/content/waiting-1.html"}
+{"type":"server-stopped","reason":"owner process exited"}
