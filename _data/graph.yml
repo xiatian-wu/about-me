@@ -21,6 +21,12 @@ nodes:
     years: "2020–2024"
     url: "/about-me/projects/covid-travel/"
 
+  - id: recycled-plastic
+    type: project
+    label: "Adoption of Recycled Plastic Products"
+    years: "2024–present"
+    url: "/about-me/projects/recycled-plastic/"
+
   # Published papers
   - id: iogansen2026bev
     type: paper
@@ -102,6 +108,23 @@ nodes:
     venue: "Transportation Research Record"
     url: "https://doi.org/10.1177/03611981231172505"
 
+  # In preparation
+  - id: iogansen2025usedEV
+    type: paper
+    status: in-preparation
+    label: "Exploring Consumer Valuation of Vehicle Attributes and Battery Health Information in the Used Electric Vehicle Markets"
+    year: 2025
+    venue: ""
+    url: ""
+
+  - id: iogansen2025recycled
+    type: paper
+    status: in-preparation
+    label: "Evaluating Methodological Differences in Discrete Choice Experiments: The Impact of Information Treatments on Willingness-to-Pay Estimates for Recycled Plastic Products"
+    year: 2025
+    venue: ""
+    url: ""
+
   # Under review
   - id: iogansen2024cardependence
     type: paper
@@ -134,6 +157,15 @@ edges:
 
   - source: ev-adoption
     target: iogansen2023afv
+
+  - source: ev-adoption
+    target: iogansen2025usedEV
+
+  - source: researcher
+    target: recycled-plastic
+
+  - source: recycled-plastic
+    target: iogansen2025recycled
 
   - source: ridehailing
     target: compostella2025pooled
