@@ -14,7 +14,12 @@
 
 /* Graph container background */
 #publication-graph {
-  background: #f8fafc;
+  background: #eef0f8;
+  border-radius: 0.75rem;
+}
+
+html[data-theme="dark"] #publication-graph {
+  background: #1e2030;
 }
 
 /* Node hover feedback */

@@ -2,6 +2,40 @@
  * CV shared styles
  *****************************/
 
+/* CV section cards on About page */
+.cv-section .card {
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-radius: 0.75rem;
+  overflow: hidden;
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--global-theme-color);
+    display: inline-block;
+  }
+}
+
+html[data-theme="dark"] .cv-section .card {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .cv-section .list-group-item {
+  background-color: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  border-color: var(--global-divider-color);
+}
+
+html[data-theme="dark"] .cv-section h6 {
+  color: var(--global-text-color);
+}
+
+html[data-theme="dark"] .cv-section .items li {
+  color: var(--global-text-color);
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }

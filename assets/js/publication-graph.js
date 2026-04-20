@@ -23,8 +23,8 @@ function findOrphans(data) {
 // ── Visual helpers ─────────────────────────────────────────────────────────
 
 function nodeColor(type, status) {
-  if (type === 'researcher')      return '#4a4e69';
-  if (type === 'project')         return '#6366f1'; // indigo
+  if (type === 'researcher')      return '#4f46e5';
+  if (type === 'project')         return '#818cf8'; // light indigo
   if (status === 'published')     return '#22c55e'; // green
   if (status === 'under-review')  return '#eab308'; // yellow
   if (status === 'in-preparation') return '#94a3b8'; // grey

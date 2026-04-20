@@ -43,7 +43,7 @@ layout: default
     <!-- CV Section -->
     {% if site.data.cv and site.data.cv.cv %}
       {% assign cv = site.data.cv.cv %}
-      <div class="cv-section mt-4">
+      <div class="cv cv-section mt-4">
         {% assign empty_array = '' | split: ',' %}
         {% assign exp = cv.sections.Experience | default: empty_array %}
         {% assign vol = cv.sections.Volunteer | default: empty_array %}
