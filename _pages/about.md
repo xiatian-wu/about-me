@@ -1,10 +1,10 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 nav: false
 subtitle: >
-  Postdoctoral Researcher at the <a href="https://www.gwu.edu/" target="_blank">George Washington University (GWU)</a>. and the <a href="https://www.nist.gov" target="_blank">National Institute of Standards and Technology (NIST)</a>.
+  Postdoctoral Researcher at the <a href="https://www.gwu.edu/" target="_blank">George Washington University (GWU)</a> and the <a href="https://www.nist.gov" target="_blank">National Institute of Standards and Technology (NIST)</a>.
 
 profile:
   align: right
