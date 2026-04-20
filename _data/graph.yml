@@ -137,18 +137,27 @@ nodes:
     status: under-review
     label: "Unveiling Mobility Patterns and Strategies to Alleviate Car Dependence: Lessons from LA"
     year: 2024
-    venue: "Journal of Transport Geography"
+    venue: "Travel Behavior and Society"
     url: ""
-    draft: ""
+    draft: "assets/pdf/Iogansen_Draft_LA_Modality.pdf"
 
   - id: loa2024pandemic
     type: paper
-    status: under-review
+    status: published
     label: "Understanding Differences Between Pre- and Post-Pandemic Modality for Commuting Trips"
     year: 2024
     venue: "Transportation Research Part A"
     url: ""
     draft: ""
+
+  - id: iogansen2026vehicletransaction
+    type: paper
+    status: under-review
+    label: "Household Vehicle Transactions During and After the Pandemic – A Panel Data Analysis"
+    year: 2024
+    venue: "Travel Behavior and Society"
+    url: ""
+    draft: "assets/pdf/Iogansen_Draft_Vehicle_Transaction.pdf"
 
 edges:
   - source: researcher
@@ -204,3 +213,6 @@ edges:
 
   - source: covid-travel
     target: loa2024pandemic
+
+  - source: covid-travel
+    target: iogansen2026vehicletransaction
