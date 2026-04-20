@@ -24,6 +24,13 @@ html[data-theme="dark"] #publication-graph {
   background: #1e2030;
 }
 
+/* Force tooltip text to stay light regardless of page theme */
+.graph-tooltip,
+.graph-tooltip strong,
+.graph-tooltip em {
+  color: #f1f5f9 !important;
+}
+
 /* Node hover feedback */
 #publication-graph circle:hover {
   opacity: 0.85;
