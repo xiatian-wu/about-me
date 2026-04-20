@@ -86,7 +86,7 @@ layout: default
                 <span class="badge badge-secondary ml-1">In preparation</span>
               {% endif %}
               {% if node.draft and node.draft != "" %}
-                <a href="{{ node.draft | relative_url }}" target="_blank" class="badge badge-info ml-1" style="text-decoration:none;">
+                <a href="{{ node.draft | prepend: '/' | relative_url }}" target="_blank" class="badge badge-info ml-1" style="text-decoration:none;">
                   <i class="fa-solid fa-file-pdf mr-1"></i>Draft
                 </a>
               {% endif %}
