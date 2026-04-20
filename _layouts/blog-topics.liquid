@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    {% assign all_categories = "" | split: "" %}
+    {% for post in site.posts %}
+      {% for cat in post.categories %}
+        {% unless all_categories contains cat %}
+          {% assign all_categories = all_categories | push: cat %}
+        {% endunless %}
+      {% endfor %}
+    {% endfor %}
+    {% assign all_categories = all_categories | sort %}
+
+    {% for category in all_categories %}
+      {% assign cat_posts = site.posts | where_exp: "post", "post.categories contains category" | sort: "date" | reverse %}
+      {% if cat_posts.size > 0 %}
+      <section class="mb-5">
+        <h2>{{ category | capitalize }}</h2>
+        <ul class="list-unstyled">
+          {% for post in cat_posts %}
+          <li class="mb-2">
+            <span class="text-muted mr-2">{{ post.date | date: "%b %Y" }}</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% if post.description %}
+              <span class="text-muted"> &mdash; {{ post.description }}</span>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    {% endfor %}
+
+    {% assign uncategorized = site.posts | where_exp: "post", "post.categories.size == 0" | sort: "date" | reverse %}
+    {% if uncategorized.size > 0 %}
+    <section class="mb-5">
+      <h2>Uncategorized</h2>
+      <ul class="list-unstyled">
+        {% for post in uncategorized %}
+        <li class="mb-2">
+          <span class="text-muted mr-2">{{ post.date | date: "%b %Y" }}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+  </article>
+</div>
