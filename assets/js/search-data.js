@@ -423,6 +423,11 @@ ninja.data = [{
           description: "Understanding consumer perceptions, knowledge, and willingness-to-pay for electric and alternative fuel vehicles.",
           section: "Projects",handler: () => {
               window.location.href = "/about-me/projects/ev-adoption/";
+            },},{id: "projects-adoption-of-recycled-plastic-products",
+          title: 'Adoption of Recycled Plastic Products',
+          description: "Applying discrete choice experiments to understand consumer willingness-to-pay for recycled plastic products and the role of information treatments.",
+          section: "Projects",handler: () => {
+              window.location.href = "/about-me/projects/recycled-plastic/";
             },},{id: "projects-ride-hailing-amp-mobility",
           title: 'Ride-hailing &amp;amp; Mobility',
           description: "Examining travel patterns, multimodality, and the broader mobility impacts of ride-hailing services.",
