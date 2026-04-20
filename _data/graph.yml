@@ -120,6 +120,7 @@ nodes:
     year: 2025
     venue: ""
     url: ""
+    draft: ""
 
   - id: iogansen2025recycled
     type: paper
@@ -128,6 +129,7 @@ nodes:
     year: 2025
     venue: ""
     url: ""
+    draft: ""
 
   # Under review
   - id: iogansen2024cardependence
@@ -137,6 +139,7 @@ nodes:
     year: 2024
     venue: "Journal of Transport Geography"
     url: ""
+    draft: ""
 
   - id: loa2024pandemic
     type: paper
@@ -145,6 +148,7 @@ nodes:
     year: 2024
     venue: "Transportation Research Part A"
     url: ""
+    draft: ""
 
 edges:
   - source: researcher
