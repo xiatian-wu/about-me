@@ -5,13 +5,15 @@ const sampleData = {
     { id: 'researcher',  type: 'researcher', label: 'Dr. Smith' },
     { id: 'proj-a',      type: 'project',    label: 'Project A', years: '2022–present', url: '/projects/proj-a' },
     { id: 'paper-1',     type: 'paper',      label: 'Paper 1',   status: 'published',   year: 2023, venue: 'Nature', url: 'https://doi.org/1' },
-    { id: 'paper-2',     type: 'paper',      label: 'Paper 2',   status: 'in-progress', year: 2025, venue: '',       url: '' },
+    { id: 'paper-2',     type: 'paper',      label: 'Paper 2',   status: 'under-review',   year: 2025, venue: '',       url: '' },
+    { id: 'paper-4',     type: 'paper',      label: 'Paper 4',   status: 'in-preparation', year: 2026, venue: '',       url: '' },
     { id: 'paper-3',     type: 'paper',      label: 'Paper 3',   status: 'published',   year: 2022, venue: 'Science', url: 'https://doi.org/2' },
   ],
   edges: [
     { source: 'researcher', target: 'proj-a' },
     { source: 'proj-a',     target: 'paper-1' },
     { source: 'proj-a',     target: 'paper-2' },
+    { source: 'proj-a',     target: 'paper-4' },
     // paper-3 has no edge — orphan
   ],
 };
@@ -19,7 +21,7 @@ const sampleData = {
 describe('buildNodes', () => {
   it('returns all nodes as shallow copies', () => {
     const nodes = buildNodes(sampleData);
-    expect(nodes).toHaveLength(5);
+    expect(nodes).toHaveLength(6);
     expect(nodes.find(n => n.id === 'researcher').type).toBe('researcher');
     expect(nodes.find(n => n.id === 'proj-a').type).toBe('project');
     expect(nodes.find(n => n.id === 'paper-1').type).toBe('paper');
@@ -35,7 +37,7 @@ describe('buildNodes', () => {
 describe('buildLinks', () => {
   it('returns one link per edge', () => {
     const links = buildLinks(sampleData);
-    expect(links).toHaveLength(3);
+    expect(links).toHaveLength(4);
   });
 
   it('each link has string source and target', () => {
@@ -62,7 +64,7 @@ describe('findOrphans', () => {
         { source: 'proj-a', target: 'paper-3' },
       ],
     };
-    expect(findOrphans(dataNoOrphans)).toHaveLength(0);
+    expect(findOrphans(dataNoOrphans)).toHaveLength(0); // paper-3 now has edge, paper-4 already has edge
   });
 
   it('does not return project or researcher nodes as orphans', () => {

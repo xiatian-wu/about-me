@@ -35,7 +35,11 @@ layout: default
       </span>
       <span class="text-muted small">
         <svg width="12" height="12" style="vertical-align:middle;margin-right:4px;"><circle cx="6" cy="6" r="6" fill="#eab308"/></svg>
-        Under review / in preparation
+        Under review
+      </span>
+      <span class="text-muted small">
+        <svg width="12" height="12" style="vertical-align:middle;margin-right:4px;"><circle cx="6" cy="6" r="6" fill="#94a3b8"/></svg>
+        In preparation
       </span>
       <span class="text-muted small ml-auto">Drag to rearrange &middot; hover for details &middot; click to open</span>
     </div>
@@ -68,7 +72,7 @@ layout: default
         <ul>
           {% for node in site.data.graph.nodes %}
             {% if node.type == "paper" and paper_ids contains node.id %}
-            <li class="{% if node.status == 'in-progress' %}text-muted{% endif %} mb-1">
+            <li class="{% if node.status == 'under-review' or node.status == 'in-preparation' %}text-muted{% endif %} mb-1">
               {% if node.url and node.url != "" %}
                 <a href="{{ node.url }}" target="_blank">{{ node.label }}</a>
               {% else %}
@@ -76,8 +80,10 @@ layout: default
               {% endif %}
               ({{ node.year }})
               {% if node.venue and node.venue != "" %} &mdash; <em>{{ node.venue }}</em>{% endif %}
-              {% if node.status == "in-progress" %}
-                <span class="badge badge-warning ml-1">In preparation</span>
+              {% if node.status == "under-review" %}
+                <span class="badge badge-warning ml-1">Under review</span>
+              {% elsif node.status == "in-preparation" %}
+                <span class="badge badge-secondary ml-1">In preparation</span>
               {% endif %}
             </li>
             {% endif %}

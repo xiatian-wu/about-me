@@ -105,7 +105,7 @@ nodes:
   # Under review
   - id: iogansen2024cardependence
     type: paper
-    status: in-progress
+    status: under-review
     label: "Unveiling Mobility Patterns and Strategies to Alleviate Car Dependence: Lessons from LA"
     year: 2024
     venue: "Journal of Transport Geography"
@@ -113,7 +113,7 @@ nodes:
 
   - id: loa2024pandemic
     type: paper
-    status: in-progress
+    status: under-review
     label: "Understanding Differences Between Pre- and Post-Pandemic Modality for Commuting Trips"
     year: 2024
     venue: "Transportation Research Part A"
